@@ -10,5 +10,11 @@ services:
   ProjectEuler\:
     resource: '../src/*'
 
+  ProjectEuler\App:
+    class: \ProjectEuler\App
+    public: true
+    arguments:
+      - !tagged_iterator app.command
+
   ProjectEuler\Commands\:
     resource: '../src/Commands/*'
