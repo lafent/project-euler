@@ -49,9 +49,31 @@ class ProblemTwoCommand extends Command
         parent::__construct();
     }
 
+    private function generateFibonacci(int $max_value) : array
+    {
+        $sequence = [1, 2];
+
+        $value = $sequence[count($sequence) - 2] + $sequence[count($sequence) - 1];
+
+        while ($value < $max_value) {
+            $sequence[] = $value;
+            $value = $sequence[count($sequence) - 2] + $sequence[count($sequence) - 1];
+        }
+
+        return $sequence;
+    }
+
     private function solveProblem() : string
     {
         $solution = 0;
+
+        $fib = $this->generateFibonacci(4000000);
+
+        foreach($fib as $v) {
+            if ($v % 2 === 0) {
+                $solution += $v;
+            }
+        }
 
         return "{$solution}";
     }
