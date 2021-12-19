@@ -80,15 +80,14 @@ class ProblemTwoCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $runtime = -hrtime(true);
-        
         if ($input->getOption('describe')) {
             $output->writeln($this->description);
         }
 
+        $runtime = -hrtime(true);
         $solution = $this->solveProblem();
-
         $runtime += hrtime(true);
+
         $output->writeln("Solution: {$solution}");
         if ($input->getOption('timed')) {
             $output->writeln("Time: " . ($runtime / 1e+6) . " microseconds.");
