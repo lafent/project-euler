@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":{"ProjectEuler\\Tests\\BaseUnitTest::testBaseUnitTest":0.001,"ProjectEuler\\Tests\\BaseIntegrationTest::testBaseIntegrationTest":0.001}}
+{"version":1,"defects":{"ProjectEuler\\Tests\\ProblemOneUnitTest::testProblemOneSolution":3,"Warning":6},"times":{"ProjectEuler\\Tests\\BaseUnitTest::testBaseUnitTest":0.011,"ProjectEuler\\Tests\\BaseIntegrationTest::testBaseIntegrationTest":0.001,"ProjectEuler\\Tests\\ProblemOneUnitTest::testProblemOneSolution":0.001,"ProjectEuler\\Tests\\ProblemsUnitTest::testProblemOneSolution":0.009,"Warning":0.006}}

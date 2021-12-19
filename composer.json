@@ -37,5 +37,26 @@
             "name": "Lee Fent",
             "email": "lee.fent@gmail.com"
         }
-    ]
+    ],
+    "config": {
+        "platform": {
+            "php": "7.4.0"
+        },
+        "preferred-install": {
+            "*": "dist"
+        },
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "unit-tests": [
+            "Composer\\Config::disableProcessTimeout",
+            "phpunit --testdox --testsuite Unit"
+        ]
+    }
 }

@@ -11,12 +11,6 @@ use GuzzleHttp\Exception\RequestException;
 
 class BaseIntegrationTest extends TestCase
 {
-    private $handlers = [];
-
-    public function setUp() : void
-    {
-    }
-
     public function testBaseIntegrationTest() : void
     {
         $value = 1;

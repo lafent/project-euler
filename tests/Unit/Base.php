@@ -9,15 +9,9 @@ use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Exception\RequestException;
 
-class BaseUnitTest extends TestCase
+class Base extends TestCase
 {
-    private $handlers = [];
-
-    public function setUp() : void
-    {
-    }
-
-    public function testBaseUnitTest() : void
+    public function Base() : void
     {
         $value = 1;
 
